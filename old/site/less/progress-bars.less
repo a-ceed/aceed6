@@ -1,0 +1,164 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Bar animations
+// -------------------------
+
+// WebKit
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+// Spec and IE10+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+// Bar itself
+// -------------------------
+.progress_wrap {
+  margin-top: 7px;
+  max-width: 485px;
+  text-align: right;
+  h6 {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    @media (max-width: 525px) {
+      display: block;
+    }
+  }
+  .clearfix();
+  @media (min-width: 768px) and (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.progress_wrap + .progress_wrap {
+  margin-top: 14px;
+}
+
+// Outer container
+.progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: @progress-bg;
+  border-radius: @progress-border-radius;
+  .box-shadow(inset 0 1px 2px rgba(0, 0, 0, .1));
+  border: 1px solid @progress-border-color;
+  padding: 3px;
+  max-width: 273px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+  margin-right: 22px;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    margin-right: 10px;
+  }
+  @media (max-width: 525px) {
+    max-width: 82%;
+  }
+}
+
+.progress_text {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: @font-family-sec2;
+  display: inline-block;
+  float: right;
+  letter-spacing: 1px;
+}
+
+// Bar of progress
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: @font-size-small;
+  line-height: @line-height-computed;
+  color: @progress-bar-color;
+  text-align: center;
+  background-color: @progress-bar-bg;
+  .box-shadow(inset 0 -1px 0 rgba(0, 0, 0, .15));
+  .transition(width .6s ease);
+}
+
+// Striped bars
+//
+// `.progress-striped .progress-bar` is deprecated as of v3.2.0 in favor of the
+// `.progress-bar-striped` class, which you just add to an existing
+// `.progress-bar`.
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  #gradient > .striped();
+  background-size: 40px 40px;
+}
+
+// Call animation for the active one
+//
+// `.progress.active .progress-bar` is deprecated as of v3.2.0 in favor of the
+// `.progress-bar.active` approach.
+.progress.active .progress-bar,
+.progress-bar.active {
+  .animation(progress-bar-stripes 2s linear infinite);
+}
+
+// Variations
+// -------------------------
+
+.progress-bar-bg1 {
+  .progress-bar-variant(@progress-bar-bg1);
+}
+
+.progress-bar-bg2 {
+  .progress-bar-variant(@progress-bar-bg2);
+}
+
+.progress-bar-bg3 {
+  .progress-bar-variant(@progress-bar-bg3);
+}
+
+.progress-bar-bg4 {
+  .progress-bar-variant(@progress-bar-bg4);
+}
+
+.progress-bar-bg5 {
+  .progress-bar-variant(@progress-bar-bg5);
+}
+
+.progress-bar-clr {
+  color: @progress-bar-bg;
+}
+
+.progress-bar-clr1 {
+  color: @progress-bar-bg1;
+}
+
+.progress-bar-clr2 {
+  color: @progress-bar-bg2;
+}
+
+.progress-bar-clr3 {
+  color: @progress-bar-bg3;
+}
+
+.progress-bar-clr4 {
+  color: @progress-bar-bg4;
+}
+
+.progress-bar-clr5 {
+  color: @progress-bar-bg5;
+}

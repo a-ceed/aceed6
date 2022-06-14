@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Contacts</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/mailform.css"/>
+    <link rel="stylesheet" href="css/material-design.css"/>
+    <link href="css/mailform.css" rel="stylesheet">
+    <link href="css/subscribe.css" rel="stylesheet">
+    <link href="css/google-map.css" rel="stylesheet">
+
+    <!--JS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/rd-smoothscroll.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src='js/device.min.js'></script>
+</head>
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div id="stuck_container" class="stuck_container">
+            <nav class="navbar navbar-default navbar-static-top ">
+                <div class="navbar-header">
+                    <h1 class="navbar-brand">
+                        <a data-type='rd-navbar-brand' href="./">Анна Заводчикова</a>
+                    </h1>
+                </div>
+
+                <div class="navbar-right">
+                    <ul class="navbar-nav sf-menu" data-type="navbar">
+                        <li class="dropdown">
+                            <a href="./">Главная</a>
+                            
+                        </li>
+                        <li>
+                            <a href="index-1.html">Обо мне</a>
+                        </li>
+                        <li>
+                            <a href="index-2.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Услуги</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="index-4.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+
+
+    <main>
+	<!--========================================================
+        <div class="map map2">
+            <div id="google-map" class="map_model"></div>
+            <ul class="map_locations">
+                <li data-x="26.9874068" data-y="40.643180">
+                    <p> dsfdf <span>800 2345-6789</span></p>
+                </li>
+            </ul>
+        </div>
+ =========================================================-->
+        <section class="well1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="text-center">
+                            адрес
+                        </h3>
+
+                        <p></p>
+
+                        <div class="contact-info">
+                            <address class="h5">
+                                г.Череповец, </br>ул. Ленинградская, 11 <br>
+                              
+                            </address>
+                            <dl>
+                                <dt></dt>
+                                </br>
+                                <dt>Телефон:</dt>
+                                <dt>
+                                    <a href="callto:#">+7921 723-12-24,</a>
+                                </dt>
+                                <dt></dt>
+                                <dt>
+                                    <a href="callto:#"> +7911 535-05-07</a>
+                                </dt>
+
+                               </br>
+								<dt>Страница VK:</dt>
+                                <dt class="text-primary mail">
+                                    <a href="https://vk.com/fotolife.anna">fotolife.anna</a>
+                                </dt></br>
+								 <dt>E-mail:</dt>
+                                <dt class="text-primary mail">
+                                    <a href="mailto:#">anna.zavodchikova@mail.ru</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-8  col-xs-12">
+                        <h3 class="text-center">
+                            Напишите мне
+                        </h3>
+
+                        <form class='mailform' method="post" action="bat/rd-mailform.php" data-type="contact">
+                            <div class="form-group" data-add-placeholder>
+                                <label for="mailform-input-name">Ваше имя*</label>
+                                <input id="mailform-input-name"
+                                       type="text"
+                                       name="name"
+                                       data-constraints="@LettersOnly @NotEmpty"/>
+                            </div>
+
+                            <div class="form-group" data-add-placeholder>
+                                <label for="mailform-input-email">Ваша почта*</label>
+                                <input id="mailform-input-email"
+                                       type="text"
+                                       name="email"
+                                       data-constraints="@Email @NotEmpty"/>
+                            </div>
+
+                            <div class="form-group" data-add-placeholder>
+                                <label for="mailform-input-phone">Ваш телефон</label>
+                                <input id="mailform-input-phone"
+                                       type="text"
+                                       name="phone"
+                                       data-constraints="@Phone"/>
+                            </div>
+
+                            <div class="form-group textarea" data-add-placeholder>
+                                <label for="mailform-input-textarea">Ваше сообщение*</label>
+                                <textarea id="mailform-input-textarea"
+                                          name="message"
+                                          data-constraints="@NotEmpty"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-link" type="submit">Отправить сообщение</button>
+                                <p></p>
+                            </div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!--========================================================
+                            FOOTER
+  =========================================================-->
+<footer>
+        <div class="footer_cnt">
+               
+			   
+			   <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h3>Страница в VK: <a href="https://vk.com/fotolife.anna">fotolife.anna</a></h3></br>
+<h3><a href="mailto:anna.zavodchikova@mail.ru">anna.zavodchikova@mail.ru</a></h3>
+                        
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                        <address class="h3">г.Череповец, ул. Ленинградская, 11 <br/>
+                                            Т.: +7921 723-12-24, +7911 535-05-07
+                        </address>
+                        <ul class="inline-list">
+                            <li>
+                                <a class="fa-twitter" href="http://twitter.com/FotoAnnaZ"></a>
+                            </li>
+                            <li>
+                                <a class="fa-facebook" href="https://www.facebook.com/anna.zavodchikova.5"></a>
+                            </li>
+                        
+                            <li>
+                                <a class="fa-pinterest" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+
+                        <h3 class="rights">
+                            &#169; <span id="copyright-year"></span> |
+                            <a href="index-5.html">Все права защищены</a>
+                            
+                        </h3>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+        
+    </footer>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<!-- </script> -->
+
+
+</body>
+</html>

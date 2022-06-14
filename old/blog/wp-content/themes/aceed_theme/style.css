@@ -1,0 +1,595 @@
+ /*
+Theme Name: Aceed
+Theme URI: http://aceed.ru
+Author: Aceed
+Author URI: http://aceed.ru
+Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentyeleven
+*/
+ 
+ body {
+                margin: 0;
+                padding: 0;
+				font-color: #cccccc;
+				background: #ffffff url("images/design_head_blog.jpg") repeat-x;
+				background-color: #ffffff;
+            }
+			
+			
+			div#container {
+                
+            margin:0 auto;
+			min-width: 1062px;
+			max-width: 1180px;
+			overflow:hidden;
+			padding-left: 10px;
+            }
+			
+			
+		    div#header {
+                
+                min-height: 200px;
+				min-width: 980px;
+				text-shadow: none;
+            }
+            div#logo {
+                min-width: 138px;
+                float: left;
+                text-align: left;
+                padding-top: 30px;
+				
+            }
+            div#logo span {
+                display: block;
+            }
+            div.button {
+                min-width: 55px;
+                float: left;
+                text-align: left;
+                padding-top: 130px;
+				
+				
+
+font-family: Arial, Tahoma, "Myriad Pro", Verdana,  Helvetica, sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+font-size:9px;
+color:#2c2c2c;
+            }
+			
+			div.button a{
+			}
+			
+            div.active {
+			font-size:9px;
+			color:#413c3d
+			padding-top: 110px;
+            }
+			
+			
+	 
+	 
+		 
+	 
+	 div#avatar {
+				position:absolute;
+				padding-top: 60px;
+     }
+	 
+	 
+	 div#pravoverh {
+				position:absolute;
+				left:70%;
+				top: 65px;
+				color:#7F7F7F;
+				text-align: top;
+				
+     }
+	 
+
+	 
+	 
+	 
+	 
+	 div#copyrait {
+				position:relative;
+				text-align: center;
+				padding-top: 100px;
+				padding-bottom: 50px;
+     }
+	 
+	 
+	  div#copyrait a{
+				font:70.01%/1.4 arial;
+				
+     }
+	 
+	 
+	 div#copyrait span {
+	 position:relative;
+				text-align: center;
+				    padding: 25px 25px 25px 25px;
+     }
+	 
+   
+			
+            div#footer {
+                
+                text-align: center;
+                
+            }
+            
+          
+			
+			
+			
+			
+			
+div.name { 
+margin-top:155px;
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color:#f7f7f5;
+padding-left: 30px;
+            }
+			
+			
+
+a:link {
+font-family: "Arial", sans-serif;
+font-size:9px;
+color:#7f7f7f;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+
+}
+
+
+a:visited {
+font-family: Arial, "Myriad Pro", Verdana, Tahoma,  Helvetica, sans-serif;
+font-size:9px;
+color:#7F7F7F;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+}
+
+a:hover {font-family: Arial, Tahoma, "Myriad Pro", Verdana,  Helvetica, sans-serif;
+font-size:9px;
+color:#2c2c2c;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+}
+
+
+#menu {
+font-family: Arial, Tahoma, "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+}
+
+
+
+
+
+p {font-family: Tahoma, Arial, "Myriad Pro", Verdana,  Helvetica, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			color:#5B5959;
+			line-height: 1.6;
+			}
+			
+span.date {
+margin-left: -100px;
+margin-top: 30px;
+font-family: Tahoma, Arial, "Myriad Pro", Verdana,  Helvetica, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			color:#CCCCCC;
+			line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+#sidebar {
+ width:274px;
+ float:right;
+ text-shadow: none;
+ margin-top: 100px;
+  }
+ 
+.menu-right {
+
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #5B5959;
+
+}
+
+h2 {
+
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #5B5959;
+text-transform: uppercase;
+
+}
+ 
+ 
+
+.podpispunkt {
+padding-left: 52px;
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #cccccc;
+
+}
+ 
+ .punkt {
+line-height: 2.5;
+padding-left: 52px;
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:12px;
+color: #3d7fa5;}
+
+
+ .punkt2 {
+line-height: 1;
+padding-left: 52px;
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:12px;
+color: #3d7fa5;}
+ 
+ .gray {
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #4e4d4d;}
+ 
+ 
+.korobka {
+ width:637px;
+ margin-right:270px;
+ margin-left: 138px;
+ }
+ 
+#podpis {
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #dadada;
+margin-top: -22px;
+text-align: center;
+
+}
+
+#podpis2 {
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:10px;
+color: #dadada;
+margin-top: -22px;
+text-align: left;
+padding-left: 100px;
+
+}
+
+
+#podpis3 {
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:10px;
+color: #dadada;
+margin-top: 58px;
+text-align: left;
+padding-left: 60px;
+
+}
+
+
+a.graylink:link{
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:11px;
+color: #4e4d4d;
+
+}
+
+a.graylink:hover {font-family: "Arial", sans-serif;
+font-size:11px;
+color:#4e4d4d;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+a.bluelink:link{
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:12px;
+color: #3d7fa5;
+
+}
+
+a.bluelink:hover {font-family: "Arial", sans-serif;
+font-size:12px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+a.bluelink:visited {font-family: "Arial", sans-serif;
+font-size:12px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+a:visited {font-family: "Arial", sans-serif;
+font-size:11px;
+color:#4e4d4d;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+div.reklama {
+                width: 260px;
+                float: left;
+                text-align: left;
+                padding-top: 180px;
+				padding-left: 130px;
+				
+			
+            }
+			
+div.reklama2 {
+                width: 472px;
+                float: left;
+                text-align: center;
+                padding-top: 10px;
+				
+			
+            }
+
+div.reklama3 {
+                width: 224px;
+                float: left;
+                text-align: center;
+                padding-top: 170px;
+				margin-left: -30px;
+			
+            }	
+			
+a.h1h1:link{
+font: italic 24px/28px Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+    margin: 0 0 18px;
+	color:#4E4D4D;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+
+}
+
+a.h1h1:hover {font-family: "Arial", sans-serif;
+font: italic 24px/28px Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+    margin: 0 0 18px;
+	color:#4E4D4D;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+a.h1h1:visited {font-family: "Arial", sans-serif;
+font: italic 24px/28px Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+    margin: 0 0 18px;
+	color:#4E4D4D;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+a.graylink2:link{
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:12px;
+color: #4e4d4d;
+
+}
+
+a.graylink2:hover {font-family: "Arial", sans-serif;
+font-size:12px;
+color:#4e4d4d;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+a.graylink2:visited {font-family: "Arial", sans-serif;
+font-size:12px;
+color:#4e4d4d;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+
+ul li {list-style-type: none;}
+li {list-style-type: none;}
+
+
+li a:link{
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:12px;
+color: #3d7fa5;
+
+}
+
+li a:hover {font-family: "Arial", sans-serif;
+font-size:12px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+li a:visited {font-family: "Arial", sans-serif;
+font-size:12px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+div.nav a{font-size:12px; }
+
+div.nav {width: 637px; text-align: center; padding-left: 138px;}
+
+p a:link{
+font-family: "Arial", sans-serif;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-size:14px;
+color: #3d7fa5;
+
+}
+
+p a:hover {font-family: "Arial", sans-serif;
+font-size:14px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+p a:visited {font-family: "Arial", sans-serif;
+font-size:14px;
+color: #4893be;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+}
+
+h3 {font-family: "Arial", sans-serif;
+    font-size: 16px;
+	color: #4E4D4D;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	font-weight:normal;
+}
+
+#menu a {font-size:9px;}
+img.fade{
+border: 2px solid #ffffff;
+}
+
+div.socialmedia-buttons{
+text-align: center;
+}
+
+

@@ -1,0 +1,67 @@
+/*==================   Tumbnail    ======================*/
+@overlay-bg: #fff;
+@overlay-icon: @fa-search;
+@overlay-icon-size: 45px;
+@overlay-icon-color: @brand-primary;
+
+.thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0;
+
+  img {
+  	width: 100%;
+  	height: auto;
+    .transition(.5s all ease);
+  }
+
+  &_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    .transition(.3s all ease);
+    color: @overlay-icon-color;
+    background: transparent;
+
+    &:before {
+      content: @overlay-icon;      
+      position: absolute;      
+      font-family: @fa;
+      font-size: @overlay-icon-size;
+      top: 50%;
+      left: 50%;
+      .transform(translate(-50%,-50%) scale(0));
+      .transition(.5s all ease);
+      opacity: 0;
+      line-height: 100px;
+      .background(@default-darker,.8);
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      .border-radius(50%);
+      .lt-ie9 & {
+        display: none;
+      }
+    }
+  }
+  
+  
+  &:hover {
+    .thumb_overlay {
+      opacity: 1;
+      .background(@overlay-bg,.5);
+      &:before{
+        opacity: 1;
+        .transform(translate(-50%,-50%) scale(1.1));
+      }
+      .lt-ie9 &:before {
+        display: block;
+      }
+    }
+  }
+}

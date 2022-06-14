@@ -1,0 +1,33 @@
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  margin-top: 10px;
+  padding: @thumbnail-padding;
+  background: @thumbnail-bg;
+  border: @thumbnail-border;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  > img,
+  a > img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Image captions
+  .caption {
+    color: @thumbnail-caption-color;
+    padding: @thumbnail-caption-padding;
+  }
+  * + .caption{
+    margin-top: 32px;
+  }
+  h6+ p{
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,330 @@
+//
+// Navbars
+// --------------------------------------------------
+
+// Wrapper and base class
+//
+// Provide a static navbar from which we expand to create full-width, fixed, and
+// other navbar variations.
+
+.navbar {
+  position: relative;
+  min-height: 47px; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: 0;
+
+  // Prevent floats from breaking the navbar
+  &:extend(.clearfix all);
+
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+
+//
+// Navbar alignment options
+//
+// Display the navbar across the entirety of the page or fixed it to the top or
+// bottom of the page.
+
+// Static top (unfixed, but 100% wide) navbar
+.navbar-static-top {
+  z-index: @zindex-navbar;
+  // border-width: 0 0 1px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: @zindex-navbar-fixed;
+
+  // Undo the rounded corners
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+  border-width: 1px 0 0;
+}
+
+// Navbar heading
+//
+// Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
+// styling of responsive aspects.
+
+.navbar-header {
+  &:extend(.clearfix all);
+
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+  }
+}
+
+// Brand/project name
+
+.navbar-brand {
+  // float: left;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 700;
+  font-family: @font-family-sec;
+  text-transform: uppercase;
+  a {
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Navbar nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+.navbar-nav {
+  &:extend(.clearfix all);
+
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    margin: 0;
+    font-family: @font-family-base;
+    font-size: 15px;
+    font-weight: 700;
+
+    > li {
+      float: left;
+      > a {
+        display: block;
+        text-transform: uppercase;
+        font-family: @font-family-sec;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 600;
+        letter-spacing: 1.3px;
+
+        @media (max-width: @grid-float-breakpoint-max) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-style: italic;
+        }
+
+        &:hover {
+
+        }
+      }
+      &.active > a,
+      &.sfHover > a {
+      }
+      + li {
+        margin-left: 54px;
+      }
+    }
+  }
+}
+
+// Component alignment
+//
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
+// issues with parents and chaining. Only do this when the navbar is uncollapsed
+// though so that navbar contents properly stack and align in mobile.
+//
+// Declared after the navbar components to ensure more specificity on the margins.
+
+@media (min-width: @grid-float-breakpoint) {
+  .navbar-left {
+    .pull-left();
+  }
+
+  .navbar-right {
+    .pull-right();
+    // margin-right: -@navbar-padding-horizontal;
+    margin-right: 0;
+
+    ~ .navbar-right {
+      margin-right: 0;
+    }
+  }
+}
+
+// Alternate navbars
+// --------------------------------------------------
+
+// Default navbar
+.navbar-default {
+  background-color: @navbar-default-bg;
+  border-color: @navbar-default-border;
+
+  .navbar-header {
+    margin-left: 98px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .navbar-right {
+    margin-right: 109px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-right: auto;
+      margin-left: auto;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-default-link-color;
+
+      &:focus {
+        color: @navbar-default-link-color;
+      }
+
+      // &:focus{
+      //  background-color: @navbar-default-bg;
+      // }
+    }
+    li {
+      position: relative;
+      &:before {
+        content: '';
+        height: 2px;
+        width: 0;
+        background: #fff;
+        position: absolute;
+        bottom: 5px;
+        left: -5%;
+        display: block;
+        .transition(0.3s);
+      }
+      &:focus{
+      &:before{
+        width: 0;
+      }
+      }
+      &:hover{
+        &:before {
+          width: 110%;
+        }
+      }
+    }
+    > .active ,
+    > .sfHover  {
+      &:before {
+        width: 110%;
+      }
+
+      &,
+      &:hover,
+      &:focus {
+        &:before {
+          width: 110%;
+        }
+      }
+    }
+    > .disabled  {
+      &,
+      &:hover,
+      &:focus {
+        &:before {
+          width: 110%;
+        }
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+
+
+// Inverse navbar
+
+.navbar-inverse {
+  background-color: @navbar-inverse-bg;
+  border-color: @navbar-inverse-border;
+
+  .navbar-brand {
+    color: @navbar-inverse-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-inverse-brand-hover-color;
+      background-color: @navbar-inverse-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-inverse-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-inverse-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-hover-color;
+        background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+    > .active > a,
+    > .sfHover > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-active-color;
+        background-color: @navbar-inverse-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-disabled-color;
+        background-color: @navbar-inverse-link-disabled-bg;
+      }
+    }
+  }
+}
+
+// ------------------------------------
+// To show only _navbar 
+//-------------------------------------
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+}

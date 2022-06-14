@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Pano2VR project file  -->
+<pano2vrconfig>
+  <panorama>
+    <input>
+      <patch/>
+      <type>equirectangular</type>
+      <filename>soorka.jpg</filename>
+      <hfov>360</hfov>
+    </input>
+    <viewingparameter>
+      <pan/>
+      <tilt/>
+      <fov/>
+    </viewingparameter>
+    <userdata/>
+    <hotspots/>
+    <output>
+      <flash>
+        <html>
+          <enabled>1</enabled>
+          <filename>soorka.html</filename>
+          <template>normal.ggt</template>
+          <values>
+            <value id="bgcolor">#ffffff</value>
+            <value id="externalinterface">false</value>
+            <value id="showuserdata">true</value>
+            <value id="soundfile"></value>
+            <value id="soundtitle"></value>
+            <value id="tablebgcolor">#dddddd</value>
+            <value id="tablebordercolor">#777777</value>
+            <value id="tabletextcolor">#000000</value>
+            <value id="textcolor">#000000</value>
+            <value id="videofile"></value>
+          </values>
+        </html>
+        <facequality/>
+        <autorotate>
+          <enabled>0</enabled>
+          <speed>0.4</speed>
+          <delay>5</delay>
+          <returntohorizon>0</returntohorizon>
+          <afterloaded>0</afterloaded>
+          <onlyinfocus>0</onlyinfocus>
+        </autorotate>
+        <loading>
+          <text/>
+          <bar/>
+          <image/>
+          <hideaboutbox>0</hideaboutbox>
+        </loading>
+        <hotspottext>
+          <enabled>1</enabled>
+          <width>180</width>
+          <height>20</height>
+          <auto>0</auto>
+          <textcolor>#000000</textcolor>
+          <textwrap>1</textwrap>
+          <background>1</background>
+          <backgroundcolor>#ffffff</backgroundcolor>
+          <border>1</border>
+          <bordercolor>#000000</bordercolor>
+        </hotspottext>
+        <cursor>
+          <ownonmovement>1</ownonmovement>
+          <ownondefault>1</ownondefault>
+        </cursor>
+        <lock>
+          <domainenabled>0</domainenabled>
+          <domainmessage>wrong domain</domainmessage>
+          <dateenabled>0</dateenabled>
+          <date>2011-05-10</date>
+          <datemessage>expired</datemessage>
+        </lock>
+        <transition>
+          <enabled>0</enabled>
+          <transitiontype>crossdissolve</transitiontype>
+          <transitioncolor>#000000</transitioncolor>
+          <transitiontime>1</transitiontime>
+          <zoominenabled>1</zoominenabled>
+          <zoomoutenabled>1</zoomoutenabled>
+          <zoomoutwait>1</zoomoutwait>
+          <zoomfov>5</zoomfov>
+          <zoomspeed>2</zoomspeed>
+        </transition>
+        <filename>soorka_out.swf</filename>
+        <quality>90</quality>
+        <subtiles>1</subtiles>
+        <windowwidth>640</windowwidth>
+        <windowheight>480</windowheight>
+        <scaling>stage</scaling>
+        <fovmode>vertical</fovmode>
+        <framerate>50</framerate>
+        <displayquality>9</displayquality>
+        <reducemotionquality>1</reducemotionquality>
+        <changestagequality>0</changestagequality>
+        <changesmoothing>1</changesmoothing>
+        <sensitivity>8</sensitivity>
+        <masssimulation>1</masssimulation>
+        <locked>0</locked>
+        <invertcontrol>0</invertcontrol>
+        <lockedwheel>1</lockedwheel>
+        <invertwheel>0</invertwheel>
+        <speedwheel>1</speedwheel>
+        <keyboardlocked>0</keyboardlocked>
+        <networkaccess>0</networkaccess>
+        <fullscreencontext>1</fullscreencontext>
+        <leveltileenabled>0</leveltileenabled>
+        <leveltilesize>512</leveltilesize>
+        <leveltileformat>0</leveltileformat>
+        <leveltilefilename>tiles/c%c_l%r_%y_%x.jpg</leveltilefilename>
+        <leveltilegeneratefiles>1</leveltilegeneratefiles>
+        <leveltileoverlap>1</leveltileoverlap>
+        <levelmemraw>300</levelmemraw>
+        <levelmembmp>200</levelmembmp>
+        <levelswitchbias>0.4</levelswitchbias>
+        <levelqueueraw>20</levelqueueraw>
+        <levelqueuebmp>5</levelqueuebmp>
+        <externalimage>0</externalimage>
+        <externalskin>0</externalskin>
+        <tilesize>1250</tilesize>
+        <previewresolution>4</previewresolution>
+        <preview>grayscale</preview>
+        <previeworder>defaultview</previeworder>
+        <previewcolor>#808080</previewcolor>
+        <previewquality>25</previewquality>
+        <skinfile>simplex_notooltip.ggsk</skinfile>
+      </flash>
+    </output>
+    <sounds/>
+    <basepath>.</basepath>
+  </panorama>
+</pano2vrconfig>

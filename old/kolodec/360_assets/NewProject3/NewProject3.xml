@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/_MG_4329.jpg" />
+    <userInterface showZoomButtons="true" showToolTips="true" showHotspotsButton="true" showFullScreenButton="true" showTogglePlayButton="true" showArrows="true" toolbarAlign="center" toolbarBackColor="transparent" toolbarHoverColor="#808285" toolbarForeColor="#E3E3E3" toolbarBackAlpha="0" toolbarAlpha="1" showProgressNumbers="true" showFullScreenToolbar="false" progressLoopColor="#e8e8e8" progressNumColor="#949494" fullScreenBackColor="#FFFFFF" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="true" disableMouseControl="false" showHighresOnFullScreen="true" mouseHoverDrag="false" hideHotspotsOnLoad="false" hideHotspotsOnZoom="true" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="7" bounce="false" rotateDirection="-1" forceDirection="false" inertiaRelToDragSpeed="true" inertiaTimeToStop="700" inertiaMaxInterval="120" useInertia="true" />
+  </settings>
+  <hotspots />
+  <images highresWidth="790" highresHeight="800">
+    <image src="images/_MG_4329.jpg">
+      <highres src="images/highres/_MG_4329.jpg" />
+    </image>
+    <image src="images/_MG_4330.jpg">
+      <highres src="images/highres/_MG_4330.jpg" />
+    </image>
+    <image src="images/_MG_4331.jpg">
+      <highres src="images/highres/_MG_4331.jpg" />
+    </image>
+    <image src="images/_MG_4332.jpg">
+      <highres src="images/highres/_MG_4332.jpg" />
+    </image>
+    <image src="images/_MG_4333.jpg">
+      <highres src="images/highres/_MG_4333.jpg" />
+    </image>
+    <image src="images/_MG_4334.jpg">
+      <highres src="images/highres/_MG_4334.jpg" />
+    </image>
+    <image src="images/_MG_4335.jpg">
+      <highres src="images/highres/_MG_4335.jpg" />
+    </image>
+    <image src="images/_MG_4336.jpg">
+      <highres src="images/highres/_MG_4336.jpg" />
+    </image>
+    <image src="images/_MG_4337.jpg">
+      <highres src="images/highres/_MG_4337.jpg" />
+    </image>
+    <image src="images/_MG_4338.jpg">
+      <highres src="images/highres/_MG_4338.jpg" />
+    </image>
+    <image src="images/_MG_4339.jpg">
+      <highres src="images/highres/_MG_4339.jpg" />
+    </image>
+    <image src="images/_MG_4340.jpg">
+      <highres src="images/highres/_MG_4340.jpg" />
+    </image>
+    <image src="images/_MG_4341.jpg">
+      <highres src="images/highres/_MG_4341.jpg" />
+    </image>
+    <image src="images/_MG_4342.jpg">
+      <highres src="images/highres/_MG_4342.jpg" />
+    </image>
+    <image src="images/_MG_4343.jpg">
+      <highres src="images/highres/_MG_4343.jpg" />
+    </image>
+    <image src="images/_MG_4344.jpg">
+      <highres src="images/highres/_MG_4344.jpg" />
+    </image>
+    <image src="images/_MG_4345.jpg">
+      <highres src="images/highres/_MG_4345.jpg" />
+    </image>
+    <image src="images/_MG_4346.jpg">
+      <highres src="images/highres/_MG_4346.jpg" />
+    </image>
+    <image src="images/_MG_4347.jpg">
+      <highres src="images/highres/_MG_4347.jpg" />
+    </image>
+    <image src="images/_MG_4348.jpg">
+      <highres src="images/highres/_MG_4348.jpg" />
+    </image>
+    <image src="images/_MG_4349.jpg">
+      <highres src="images/highres/_MG_4349.jpg" />
+    </image>
+    <image src="images/_MG_4350.jpg">
+      <highres src="images/highres/_MG_4350.jpg" />
+    </image>
+    <image src="images/_MG_4351.jpg">
+      <highres src="images/highres/_MG_4351.jpg" />
+    </image>
+    <image src="images/_MG_4352.jpg">
+      <highres src="images/highres/_MG_4352.jpg" />
+    </image>
+    <image src="images/_MG_4353.jpg">
+      <highres src="images/highres/_MG_4353.jpg" />
+    </image>
+    <image src="images/_MG_4354.jpg">
+      <highres src="images/highres/_MG_4354.jpg" />
+    </image>
+    <image src="images/_MG_4355.jpg">
+      <highres src="images/highres/_MG_4355.jpg" />
+    </image>
+    <image src="images/_MG_4356.jpg">
+      <highres src="images/highres/_MG_4356.jpg" />
+    </image>
+    <image src="images/_MG_4357.jpg">
+      <highres src="images/highres/_MG_4357.jpg" />
+    </image>
+    <image src="images/_MG_4358.jpg">
+      <highres src="images/highres/_MG_4358.jpg" />
+    </image>
+    <image src="images/_MG_4359.jpg">
+      <highres src="images/highres/_MG_4359.jpg" />
+    </image>
+    <image src="images/_MG_4360.jpg">
+      <highres src="images/highres/_MG_4360.jpg" />
+    </image>
+    <image src="images/_MG_4361.jpg">
+      <highres src="images/highres/_MG_4361.jpg" />
+    </image>
+    <image src="images/_MG_4362.jpg">
+      <highres src="images/highres/_MG_4362.jpg" />
+    </image>
+    <image src="images/_MG_4363.jpg">
+      <highres src="images/highres/_MG_4363.jpg" />
+    </image>
+    <image src="images/_MG_4364.jpg">
+      <highres src="images/highres/_MG_4364.jpg" />
+    </image>
+    <image src="images/_MG_4365.jpg">
+      <highres src="images/highres/_MG_4365.jpg" />
+    </image>
+    <image src="images/_MG_4366.jpg">
+      <highres src="images/highres/_MG_4366.jpg" />
+    </image>
+    <image src="images/_MG_4367.jpg">
+      <highres src="images/highres/_MG_4367.jpg" />
+    </image>
+    <image src="images/_MG_4368.jpg">
+      <highres src="images/highres/_MG_4368.jpg" />
+    </image>
+    <image src="images/_MG_4369.jpg">
+      <highres src="images/highres/_MG_4369.jpg" />
+    </image>
+    <image src="images/_MG_4370.jpg">
+      <highres src="images/highres/_MG_4370.jpg" />
+    </image>
+    <image src="images/_MG_4371.jpg">
+      <highres src="images/highres/_MG_4371.jpg" />
+    </image>
+    <image src="images/_MG_4372.jpg">
+      <highres src="images/highres/_MG_4372.jpg" />
+    </image>
+    <image src="images/_MG_4373.jpg">
+      <highres src="images/highres/_MG_4373.jpg" />
+    </image>
+    <image src="images/_MG_4374.jpg">
+      <highres src="images/highres/_MG_4374.jpg" />
+    </image>
+    <image src="images/_MG_4375.jpg">
+      <highres src="images/highres/_MG_4375.jpg" />
+    </image>
+    <image src="images/_MG_4376.jpg">
+      <highres src="images/highres/_MG_4376.jpg" />
+    </image>
+    <image src="images/_MG_4377.jpg">
+      <highres src="images/highres/_MG_4377.jpg" />
+    </image>
+    <image src="images/_MG_4378.jpg">
+      <highres src="images/highres/_MG_4378.jpg" />
+    </image>
+    <image src="images/_MG_4379.jpg">
+      <highres src="images/highres/_MG_4379.jpg" />
+    </image>
+    <image src="images/_MG_4380.jpg">
+      <highres src="images/highres/_MG_4380.jpg" />
+    </image>
+    <image src="images/_MG_4381.jpg">
+      <highres src="images/highres/_MG_4381.jpg" />
+    </image>
+    <image src="images/_MG_4382.jpg">
+      <highres src="images/highres/_MG_4382.jpg" />
+    </image>
+    <image src="images/_MG_4383.jpg">
+      <highres src="images/highres/_MG_4383.jpg" />
+    </image>
+    <image src="images/_MG_4384.jpg">
+      <highres src="images/highres/_MG_4384.jpg" />
+    </image>
+    <image src="images/_MG_4385.jpg">
+      <highres src="images/highres/_MG_4385.jpg" />
+    </image>
+    <image src="images/_MG_4386.jpg">
+      <highres src="images/highres/_MG_4386.jpg" />
+    </image>
+    <image src="images/_MG_4387.jpg">
+      <highres src="images/highres/_MG_4387.jpg" />
+    </image>
+    <image src="images/_MG_4388.jpg">
+      <highres src="images/highres/_MG_4388.jpg" />
+    </image>
+    <image src="images/_MG_4390.jpg">
+      <highres src="images/highres/_MG_4390.jpg" />
+    </image>
+  </images>
+</config>

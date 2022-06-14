@@ -1,0 +1,129 @@
+body {
+    font-family: Tahoma Arial Sans-Serif;
+    font-size: 0.75em;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+a, img {
+    border: 0;
+}
+
+#page-wrapper {
+    background: #dcdcda url(images/bg-wrapper-header.gif) top left repeat-x;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+#footer {
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    margin-top: -121px;
+    height: 121px;
+    background: url(images/bg-wrapper-header.gif) bottom left repeat-x;
+}
+
+#page {
+    width: 943px;
+    height: auto !important;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px; /* Gecko (Firefox) */
+    -moz-border-radius: 10px; /* WebKit (Safari/Chrome) */
+    -webkit-border-radius: 10px; /* KHTML (Konquerer) */
+    -khtml-border-radius: 10px;
+    background: #FFFFFF;
+}
+
+#bottom-menu {
+    margin: auto;
+    height: 65px;
+    background: #FFFFFF;
+    width: 943px;
+    text-align: center;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div.site-title {
+    height: 40px;
+    width: 943px;
+    margin: auto;
+}
+
+    div.site-title img {
+        padding-top: 15px;
+        padding-left: 50px;
+    }
+
+div.main-menu {
+    height: 64px;
+}
+    div.main-menu ul {
+        padding-top: 27px;
+        list-style: none none outside;
+        margin: 0;
+    }
+        div.main-menu ul li {
+            display: -moz-inline-box;
+            display: inline-block;
+            text-align: center;
+            width: 110px;
+        }
+            div.main-menu ul li a, div.main-menu ul li a:visited {
+                text-transform: uppercase;
+                color: #2e302f;
+                font-style: Verdana;
+            }
+
+div.header-image {
+    height: 251px;
+    background: url(images/school-photo.jpg) no-repeat top left;
+}
+
+div.main-content {
+    padding-top: 45px;
+}
+    div#sidebar {
+        width: 215px;
+        margin-left: 2px;
+        background: #e5e5e5;
+        float: left;
+    }
+        div.sidebar-block-header {
+            height: 42px;
+            background: #9a3334;
+            border-bottom: #8f3132 5px solid ;
+            text-align: right;
+        }
+            div.sidebar-block-header h2 {
+                color: #FFFFFF;
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 1.167em;
+                font-weight: normal;
+                padding-top: 20px;
+                padding-right: 25px;
+            }
+    div.content-wrapper {
+        margin-left: 217px;
+    }
+    div.content {
+        width: 585px;
+        margin: auto;
+    }
+        div.content h1 {
+            color: #9a3334;
+            font-weight: normal;
+            font-size: 1.667em;
+        }

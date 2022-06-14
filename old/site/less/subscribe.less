@@ -1,0 +1,121 @@
+@import "mixins.less";
+@import "variables.less";
+
+/*========================================================
+                      Contact Form
+=========================================================*/
+
+@input-height: 50px;
+@input-offset-top: 10px;
+@input-padding: 15px 0 15px;
+@input-font-family: @font-family-base;
+@input-font-size: 20px;
+@input-line-height: 24px;
+@input-color: #b3b3b3;
+@input-border-radius: 0;
+@input-brdr: 1px solid #cdcdcd;
+@input-font-weight: 400;
+@input-background: @footer-bg;
+
+@textarea-height: 212px;
+
+@placeholder-clr: @input-color;
+@placeholder-opacity: 1;
+
+/* MF
+========================================================*/
+.subscribe {
+  max-width: 270px;
+  * + & {
+    margin-top: 12px;
+  }
+  .mailform {
+    position: relative;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+    fieldset {
+      border: none;
+      line-height: 0;
+    }
+
+    * {
+      .box-sizing(border-box);
+    }
+  }
+
+  .mailform fieldset > label,
+  .mailform .form-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: @input-offset-top;
+    margin-bottom: 0;
+
+    &.textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin: 0;
+      -webkit-appearance: none;
+      outline: none;
+      font-family: @input-font-family;
+      font-size: @input-font-size;
+      padding: @input-padding;
+      line-height: @input-line-height;
+      color: @input-color;
+      background: @input-background;
+      font-weight: @input-font-weight;
+      border: none;
+      border-bottom: @input-brdr;
+      .border-radius(@input-border-radius);
+
+      &:-moz-placeholder {
+        color: @placeholder-clr;
+        opacity: @placeholder-opacity;
+      }
+
+      &::-webkit-input-placeholder {
+        color: @placeholder-clr;
+        opacity: @placeholder-opacity;
+      }
+
+      &::-moz-placeholder {
+        color: @placeholder-clr;
+        opacity: @placeholder-opacity;
+      }
+
+      &:-ms-input-placeholder {
+        color: @placeholder-clr;
+        opacity: @placeholder-opacity;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      overflow: auto;
+      height: @textarea-height;
+    }
+
+    @media (max-width: 1365px) {
+      margin-top: 30px;
+    }
+  }
+
+  @import "subscribe_modules/_mf-animation.less";
+  @import "subscribe_modules/_mf-placeholder.less";
+  @import "subscribe_modules/_mf-validation.less";
+  @import "subscribe_modules/_mf-submit.less";
+  //@import "subscribe_modules/_mf-icon.less";
+  //@import "subscribe_modules/_mf-select.less";
+  //@import "subscribe_modules/_mf-datepicker.less";
+}

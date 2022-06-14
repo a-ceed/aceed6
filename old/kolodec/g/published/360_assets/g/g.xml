@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/_MG_5777.jpg" />
+    <userInterface showZoomButtons="false" showToolTips="false" showHotspotsButton="false" showFullScreenButton="true" showTogglePlayButton="true" showArrows="true" toolbarAlign="center" toolbarBackColor="transparent" toolbarHoverColor="#808285" toolbarForeColor="#E3E3E3" toolbarBackAlpha="0" toolbarAlpha="1" showProgressNumbers="true" showFullScreenToolbar="false" progressLoopColor="#e8e8e8" progressNumColor="#949494" fullScreenBackColor="#FFFFFF" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="true" disableMouseControl="false" showHighresOnFullScreen="true" mouseHoverDrag="false" hideHotspotsOnLoad="false" hideHotspotsOnZoom="true" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="7" bounce="false" rotateDirection="-1" forceDirection="false" inertiaRelToDragSpeed="true" inertiaTimeToStop="700" inertiaMaxInterval="120" useInertia="true" />
+  </settings>
+  <hotspots />
+  <images>
+    <image src="images/_MG_5777.jpg" />
+    <image src="images/_MG_5778.jpg" />
+    <image src="images/_MG_5779.jpg" />
+    <image src="images/_MG_5780.jpg" />
+    <image src="images/_MG_5781.jpg" />
+    <image src="images/_MG_5783.jpg" />
+    <image src="images/_MG_5784.jpg" />
+    <image src="images/_MG_5785.jpg" />
+    <image src="images/_MG_5786.jpg" />
+    <image src="images/_MG_5787.jpg" />
+    <image src="images/_MG_5788.jpg" />
+    <image src="images/_MG_5789.jpg" />
+    <image src="images/_MG_5790.jpg" />
+    <image src="images/_MG_5791.jpg" />
+    <image src="images/_MG_5792.jpg" />
+    <image src="images/_MG_5793.jpg" />
+    <image src="images/_MG_5794.jpg" />
+    <image src="images/_MG_5795.jpg" />
+    <image src="images/_MG_5796.jpg" />
+    <image src="images/_MG_5797.jpg" />
+    <image src="images/_MG_5798.jpg" />
+    <image src="images/_MG_5799.jpg" />
+    <image src="images/_MG_5800.jpg" />
+    <image src="images/_MG_5801.jpg" />
+    <image src="images/_MG_5802.jpg" />
+    <image src="images/_MG_5803.jpg" />
+    <image src="images/_MG_5804.jpg" />
+    <image src="images/_MG_5805.jpg" />
+    <image src="images/_MG_5806.jpg" />
+    <image src="images/_MG_5807.jpg" />
+    <image src="images/_MG_5808.jpg" />
+    <image src="images/_MG_5809.jpg" />
+    <image src="images/_MG_5810.jpg" />
+    <image src="images/_MG_5811.jpg" />
+    <image src="images/_MG_5812.jpg" />
+    <image src="images/_MG_5813.jpg" />
+    <image src="images/_MG_5814.jpg" />
+    <image src="images/_MG_5815.jpg" />
+    <image src="images/_MG_5816.jpg" />
+    <image src="images/_MG_5817.jpg" />
+    <image src="images/_MG_5818.jpg" />
+    <image src="images/_MG_5819.jpg" />
+    <image src="images/_MG_5820.jpg" />
+    <image src="images/_MG_5821.jpg" />
+    <image src="images/_MG_5822.jpg" />
+    <image src="images/_MG_5823.jpg" />
+    <image src="images/_MG_5824.jpg" />
+    <image src="images/_MG_5825.jpg" />
+    <image src="images/_MG_5826.jpg" />
+    <image src="images/_MG_5827.jpg" />
+    <image src="images/_MG_5828.jpg" />
+    <image src="images/_MG_5829.jpg" />
+    <image src="images/_MG_5830.jpg" />
+    <image src="images/_MG_5831.jpg" />
+    <image src="images/_MG_5832.jpg" />
+    <image src="images/_MG_5833.jpg" />
+    <image src="images/_MG_5834.jpg" />
+    <image src="images/_MG_5835.jpg" />
+    <image src="images/_MG_5836.jpg" />
+    <image src="images/_MG_5837.jpg" />
+    <image src="images/_MG_5838.jpg" />
+  </images>
+</config>

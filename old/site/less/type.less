@@ -1,0 +1,1044 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  margin: 0;
+  color: @default-darker;
+}
+
+h1, .h1 {
+  font-size: @font-size-h1;
+  line-height: @font-lh-h1;
+  font-family: @font-family-sec;
+}
+
+h2, .h2 {
+  font-size: @font-size-h2;
+  line-height: @font-lh-h2;
+  font-family: @font-family-sec1;
+  text-transform: uppercase;
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 42px;
+  }
+  @media (max-width: 479px) {
+    font-size: 29px;
+  }
+}
+
+h3, .h3 {
+  font-size: @font-size-h3;
+  line-height: @font-lh-h3;
+  font-family: @font-family-sec;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h4, .h4 {
+  font-size: @font-size-h4;
+  line-height: @font-lh-h4;
+  text-transform: uppercase;
+  font-family: @font-family-sec;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+
+h5, .h5 {
+  font-size: @font-size-h5;
+  line-height: @font-lh-h5;
+  font-weight: 500;
+}
+
+h6, .h6 {
+  font-size: @font-size-h6;
+  line-height: @font-lh-h6;
+  font-family: @font-family-sec2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// Body text
+// -------------------------
+
+p {
+  line-height: @line-height-base;
+  margin: 0;
+}
+
+.lead {
+
+}
+
+// FA
+// -----------------------
+
+.fa {
+  line-height: inherit;
+}
+
+[class*='fa-'] {
+  &:before {
+    font-family: @fa;
+    color: inherit;
+  }
+}
+
+// Main Layout
+// -----------------------
+* + p.clr_1 {
+  margin-top: 38px;
+}
+
+* + p {
+  margin-top: 32px;
+}
+
+* + .row {
+  margin-top: 88px;
+}
+
+* + .btn-link {
+  margin-top: 39px;
+}
+
+* + .btn-default {
+  margin-top: 35px;
+}
+
+* + .inline-list {
+  margin-top: 36px;
+}
+
+* + .marked-list {
+  margin-top: 12px;
+}
+
+* + .media_mod1 {
+  margin-top: 40px;
+}
+
+* + .contact-info {
+  margin-top: 18px;
+}
+
+.media_mod1 + .media_mod1 {
+  margin-top: 25px;
+}
+
+.row + .row {
+  margin-top: 33px;
+}
+
+h3 + h5 {
+  margin-top: 40px;
+}
+
+h5 + p {
+  margin-top: 2px;
+}
+
+p + p {
+  margin-top: 25px;
+}
+
+.time_mod + h4 {
+  margin-top: 28px;
+}
+
+time + h4 + p.l-height {
+  margin-top: 22px;
+}
+
+h4 + p.l-height {
+  margin-top: 42px;
+}
+
+h3 + img {
+  margin-top: 49px;
+}
+
+h3 + article {
+  margin-top: 38px;
+}
+
+article + article {
+  margin-top: 14px;
+}
+
+img + h5 {
+  margin-top: 20px;
+}
+
+p + h6 {
+  margin-top: 34px;
+}
+
+* + .off0 {
+  margin-top: 0;
+}
+
+* + .off {
+  margin-top: 100px;
+}
+
+* + .off1 {
+  margin-top: 21px;
+}
+
+* + .off2 {
+  margin-top: 39px;
+}
+
+* + .off3 {
+  margin-top: 49px;
+}
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
+small,
+.small {
+  // font-size: floor((100% * @font-size-small / @font-size-base));
+  // font-size: inherit;
+}
+
+mark,
+.mark {
+  background-color: @brand-warning;
+  padding: .2em;
+}
+
+// Alignment
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.center767 {
+  @media (max-width: 767px) {
+    text-align: center;
+    * {
+      text-align: center;
+    }
+  }
+}
+
+.center991 {
+  @media (max-width: 991px) {
+    text-align: center;
+    * {
+      text-align: center;
+    }
+  }
+}
+
+.left767 {
+  @media (max-width: 767px) {
+    text-align: left;
+    * {
+      text-align: left;
+    }
+  }
+}
+
+.left991 {
+  @media (max-width: 991px) {
+    text-align: left;
+    * {
+      text-align: left;
+    }
+  }
+}
+
+.right767 {
+  @media (max-width: 767px) {
+    text-align: right;
+    * {
+      text-align: right;
+    }
+  }
+}
+
+.right991 {
+  @media (max-width: 991px) {
+    text-align: right;
+    * {
+      text-align: right;
+    }
+  }
+}
+
+// Transformation
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.fw-l {
+  font-weight: 300;
+}
+
+.fw-n {
+  font-weight: 400;
+}
+
+.fw-m {
+  font-weight: 500;
+}
+
+.fw-sb {
+  font-weight: 600;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+.fw-xb {
+  font-weight: 800;
+}
+
+.white {
+  color: @white-clr;
+}
+
+.txt-sec {
+  color: @secondary-clr;
+}
+
+// Contextual colors
+.text-muted {
+  color: @text-muted;
+}
+
+.text-primary {
+  color: @brand-primary;
+}
+
+.text-success {
+  color: @brand-success;
+}
+
+.text-info {
+  color: @brand-info;
+}
+
+.text-warning {
+  color: @brand-warning;
+}
+
+.text-danger {
+  color: @brand-danger;
+}
+
+.clr_1 {
+  color: #7f7f7f;
+}
+
+//Icons
+//========================
+.fa-bank, .fa-calendar, .fa-comments-o {
+  font-size: 28px;
+  line-height: 37px;
+  color: @default-darker;
+}
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+  cite {
+    color: #fff;
+  }
+  background: @default-darker;
+  .btn-default {
+
+    .button-variant(@white-clr; @btn-default-bg; @default-dark);
+    &:focus {
+      .button-variant(@white-clr; @btn-default-bg; @default-dark);
+    }
+
+    &:hover {
+      .button-variant(@default-darker; @white-clr; @white-clr);
+    }
+  }
+}
+
+.bg-img {
+  background: url("../images/bg1.jpg") no-repeat #2b2f3a center bottom;
+
+  @media (max-width: 991px) {
+    background-position: right bottom;
+  }
+}
+
+.bg-img1 {
+  background: url("../images/bg2.jpg") no-repeat #2b2f3a center bottom;
+
+  @media (max-width: 991px) {
+    background-position: right bottom;
+  }
+}
+
+.bg-img, .bg-img1 {
+  -webkit-background-size: cover;
+  background-size: cover;
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+  .btn-default {
+    .button-variant(@white-clr; @btn-default-bg; @white-clr);
+    &:focus {
+      .button-variant(@white-clr; @btn-default-bg; @white-clr);
+    }
+
+    &:hover {
+      .button-variant(@default-darker; @white-clr; @white-clr);
+    }
+  }
+}
+
+.bg-secondary {
+  background: @secondary-clr;
+}
+
+.bg-success {
+  background: @brand-success;
+}
+
+.bg-info {
+  background: @brand-info;
+}
+
+.bg-warning {
+  background: @brand-warning;
+}
+
+.bg-danger {
+  background: @brand-danger;
+}
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  li {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    a {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+  }
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+/*=================   List Inline   =====================*/
+.list-inline {
+  .list-unstyled();
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/*=================   Inline list   =====================*/
+
+.inline-list {
+  //icons
+  li {
+    position: relative;
+    display: inline-block;
+    a {
+      height: 42px;
+      width: 42px;
+      display: block;
+      .border-radius(50%);
+      border: 1px solid #dadada;
+      color: #3f3f3f;
+      background: #fff;
+      text-align: center;
+      .transition(0.4s);
+      .box-sizing(border-box);
+      &:before {
+        position: absolute;
+        font-size: 15px;
+        line-height: 42px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover {
+        color: #fff;
+        border: 21px solid @default-darker;
+      }
+    }
+    + li {
+      margin-left: -2px;
+    }
+  }
+}
+
+/*================      Flex list     =================*/
+
+.flex-list {
+
+}
+
+/*================      Index list     =================*/
+
+.index-list {
+
+}
+
+/*==================  Marked List  ======================*/
+.marked-list {
+  li {
+    position: relative;
+    padding-left: 23px;
+
+    &:before {
+      content: '\f18e';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: @fa;
+      color: @text-color;
+      .transition(0.3s);
+    }
+
+    & + li {
+      margin-top: 10px;
+    }
+  }
+  li:hover:before {
+    left: 2px;
+  }
+  a:hover {
+    color: @brand-primary;
+  }
+}
+
+/*==================  Terms List  ======================*/
+.terms-list {
+  * + & {
+    margin-top: 39px;
+    margin-bottom: 0;
+  }
+  dt {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: @default-darker;
+  }
+  dd {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+  }
+  dt + dd {
+    margin-top: 0;
+  }
+  dd + dt {
+    margin-top: 34px;
+  }
+  + a {
+    margin-top: 12px;
+    display: inline-block;
+    color: @brand-primary;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/*==================    Cont-info  ======================*/
+.contact-info {
+  max-width: 229px;
+
+  dl {
+    display: block;
+    margin-top: 5px;
+    dt {
+      float: left;
+    }
+    dd {
+      float: right;
+      margin-left: 4px;
+    }
+    dd, dt {
+      font-size: 18px;
+    }
+  }
+
+  dt + dd {
+    margin-top: 0;
+  }
+  dd + dt {
+    clear: both;
+    margin-top: 0;
+  }
+  .mail {
+    margin-right: 19px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: (@dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      .text-overflow();
+    }
+
+    dd {
+      margin-left: @dl-horizontal-offset;
+    }
+  }
+}
+
+// Misc
+// -------------------------
+
+// Abbreviations and acronyms
+abbr[title],
+  // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @abbr-border-color;
+}
+
+.initialism {
+  font-size: 90%;
+  .text-uppercase();
+}
+
+// Blockquotes
+blockquote {
+  * + & {
+    margin-top: 37px;
+  }
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  // font-size: @blockquote-font-size;
+  cite {
+    font-style: normal;
+    display: inline-block;
+  }
+  * + cite {
+    margin-top: 12px;
+  }
+  q {
+    .clearfix();
+    font-style: italic;
+  }
+
+  & + blockquote {
+    margin-top: 21px;
+  }
+}
+
+// Opposite alignment of blockquote
+//
+// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid @blockquote-border-color;
+  border-left: 0;
+  text-align: right;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:before {
+      content: '';
+    }
+    &:after {
+      content: '\00A0 \2014'; // nbsp, em dash
+    }
+  }
+}
+
+// Addresses
+address {
+  font-style: normal;
+}
+
+// Articles
+
+article {
+
+}
+
+//Figure
+//---------------
+
+figure {
+
+  figcaption {
+  }
+
+}
+
+.bord {
+  border: 1px solid #dadada;
+}
+
+.ins {
+  padding: 74px 40px 71px 62px;
+  @media (max-width: 479px) {
+    padding: 74px 40px;
+  }
+}
+
+.ins1 {
+  padding: 25px 30px 22px 30px;
+}
+
+//Icons
+//---------------
+.fl-36-slim-icons-photo193, .fl-36-slim-icons-video166, .fl-36-slim-icons-star165, .fl-36-slim-icons-monitor79 {
+  color: #111111;
+  line-height: 34px;
+  position: absolute;
+  top: 19px;
+  left: 0;
+  @media (max-width: 479px) {
+    position: relative;
+    top: 0;
+  }
+}
+
+.fl-36-slim-icons-photo193 {
+  font-size: 34px;
+}
+
+.fl-36-slim-icons-video166 {
+  font-size: 45px;
+}
+
+.fl-36-slim-icons-star165 {
+  font-size: 45px;
+}
+
+.fl-36-slim-icons-monitor79 {
+  font-size: 40px;
+}
+
+//Gallery
+//---------------
+.gallery_wrap {
+  width: 100%;
+  .clearfix();
+  img {
+    width: 100%;
+    margin: 0;
+  }
+  .gallery_block_wrap1 {
+    width: 40.09756097560976%;
+    float: left;
+    margin: 0;
+    .gallery_block1 {
+      width: 100%;
+      .gallery_block1_1 {
+        float: left;
+        width: 49.75669099756691%;
+      }
+      .gallery_block1_2 {
+        float: right;
+        width: 50.24330900243309%;
+      }
+    }
+  }
+  .gallery_block_wrap2 {
+    width: 59.90243902439024%;
+    float: right;
+    margin: 0;
+    .gallery_block2 {
+      width: 100%;
+      .gallery_block2_1 {
+        float: left;
+        width: 33.63192182410423%;
+      }
+      .gallery_block2_2 {
+        float: right;
+        width: 66.36807817589577%;
+      }
+    }
+    .gallery_block3 {
+      width: 100%;
+      .gallery_block3_1 {
+        float: left;
+        width: 67.10097719869707%;
+      }
+      .gallery_block3_2 {
+        float: right;
+        width: 32.89902280130293%;
+      }
+    }
+  }
+  .gallery_block_wrap3 {
+    width: 20.14634146341463%;
+    float: left;
+    margin: 0;
+    .gallery_block4 {
+      width: 100%;
+    }
+  }
+  .gallery_block_wrap4 {
+    .gallery_block5 {
+      width: 79.85365853658537%;
+      float: right;
+      margin: 0;
+      .gallery_block5_1 {
+        float: left;
+        width: 25.22907758094075%;
+      }
+      .gallery_block5_2 {
+        float: left;
+        width: 49.78619425778864%;
+      }
+      .gallery_block5_3 {
+        float: right;
+        width: 24.98472816127062%;
+      }
+    }
+    .gallery_block6 {
+      width: 79.85365853658537%;
+      float: right;
+      margin: 0;
+      .gallery_block6_1 {
+        float: left;
+        width: 50.33598045204643%;
+      }
+      .gallery_block6_2 {
+        float: left;
+        width: 24.67929138668296%;
+      }
+      .gallery_block6_3 {
+        float: right;
+        width: 24.98472816127062%;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .gallery_block_wrap1, .gallery_block_wrap2 {
+      width: 100%;
+      display: block;
+    }
+  }
+  @media (max-width: 767px) {
+      .gallery_block_wrap1.gallery_block_wrap_767 {
+        .gallery_block1 {
+          .gallery_block1_1 {
+            width: 100%;
+          }
+          .gallery_block1_2 {
+            width: 100%;
+          }
+        }
+      }
+
+      .gallery_block_wrap2.gallery_block_wrap_767 {
+        .gallery_block2 {
+          .gallery_block2_1 {
+            width: 100%;
+          }
+          .gallery_block2_2 {
+            width: 100%;
+          }
+        }
+        .gallery_block3 {
+          .gallery_block3_1 {
+            width: 100%;
+          }
+          .gallery_block3_2 {
+            width: 100%;
+          }
+        }
+      }
+
+    .gallery_block_wrap3 {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery_block_wrap4 {
+      width: 100%;
+      display: block;
+      .gallery_block5 {
+        width: 100%;
+        .gallery_block5_1 {
+          width: 100%;
+        }
+        .gallery_block5_2 {
+          width: 100%;
+        }
+        .gallery_block5_3 {
+          width: 100%;
+        }
+      }
+      .gallery_block6 {
+        width: 100%;
+        .gallery_block6_1 {
+          width: 100%;
+        }
+        .gallery_block6_2 {
+          width: 100%;
+        }
+        .gallery_block6_3 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .gallery_block_wrap1 {
+      .gallery_block1 {
+        .gallery_block1_1 {
+          width: 100%;
+        }
+        .gallery_block1_2 {
+          width: 100%;
+        }
+      }
+    }
+
+    .gallery_block_wrap2 {
+      .gallery_block2 {
+        .gallery_block2_1 {
+          width: 100%;
+        }
+        .gallery_block2_2 {
+          width: 100%;
+        }
+      }
+      .gallery_block3 {
+        .gallery_block3_1 {
+          width: 100%;
+        }
+        .gallery_block3_2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.time_mod {
+  position: relative;
+  height: 60px;
+  width: 150px;
+  display: inline-block;
+  &:before, &:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: #9e9e9e;
+    font-style: italic;
+    font-family: @font-family-sec3;
+    text-align: center;
+  }
+  &:before {
+    color: #dfdfdf;
+    clip: rect(0, auto, 30px, auto);
+    z-index: 2;
+  }
+  &:after {
+    color: #9e9e9e;
+    z-index: 1;
+  }
+}

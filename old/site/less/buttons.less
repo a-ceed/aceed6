@@ -1,0 +1,190 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  font-weight: @btn-font-weight;  
+  cursor: pointer;
+  border: 1px solid @btn-default-border;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: @font-family-sec;
+  .transition(.3s all ease);
+  padding: 16px 26px;
+}
+
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  &:focus{
+    .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  }
+  
+  &:hover{
+    .button-variant(@white-clr; @default-darker; @default-darker);
+  }
+}
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  &:focus{
+    .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  }
+ 
+  &:hover{
+    .button-variant(@brand-primary; @btn-default-bg; @brand-primary);
+  }
+}
+// Success appears as green
+.btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+  &:focus{
+    .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+  }
+  
+}
+// Info appears as blue-green
+.btn-info {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+  &:focus{
+    .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+  }
+  
+}
+// Warning appears as orange
+.btn-warning {
+  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+  &:focus{
+    .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+  }
+ 
+}
+// Danger and error appear as red
+.btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+  &:focus{
+    .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+  }
+  
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  display: inline-block;
+  color: @btn-danger-color;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: @font-family-sec;
+  .transition(.3s all ease);
+  &:before{
+    content: "\f18e";
+    font-family: @fa;
+    float: left;
+    color: #8f8f8f;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 9px;
+    .transition(.3s all ease);
+    position: relative;
+    left: 0;
+  }
+ 
+  &:focus{
+    color: inherit;
+    font-size: inherit;
+  }
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+    background-color: transparent;
+    &:before{
+      color: @white-clr;
+      left: 3px;
+    }
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+      &:before{
+        color: @white-clr;
+        left: 3px;
+      }
+    }
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-xs {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

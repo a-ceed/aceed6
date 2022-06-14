@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/_MG_4667.jpg" />
+    <userInterface showZoomButtons="false" showToolTips="false" showHotspotsButton="false" showFullScreenButton="true" showTogglePlayButton="false" showArrows="true" toolbarAlign="center" toolbarBackColor="transparent" toolbarHoverColor="#808285" toolbarForeColor="#E3E3E3" toolbarBackAlpha="0" toolbarAlpha="1" showProgressNumbers="true" showFullScreenToolbar="false" progressLoopColor="#e8e8e8" progressNumColor="#949494" fullScreenBackColor="#FFFFFF" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="true" disableMouseControl="false" showHighresOnFullScreen="true" mouseHoverDrag="false" hideHotspotsOnLoad="false" hideHotspotsOnZoom="true" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="7" bounce="false" rotateDirection="-1" forceDirection="false" inertiaRelToDragSpeed="true" inertiaTimeToStop="700" inertiaMaxInterval="120" useInertia="true" />
+  </settings>
+  <hotspots />
+  <images>
+    <image src="images/_MG_4667.jpg" />
+    <image src="images/_MG_4668.jpg" />
+    <image src="images/_MG_4669.jpg" />
+    <image src="images/_MG_4670.jpg" />
+    <image src="images/_MG_4671.jpg" />
+    <image src="images/_MG_4672.jpg" />
+    <image src="images/_MG_4673.jpg" />
+    <image src="images/_MG_4674.jpg" />
+    <image src="images/_MG_4675.jpg" />
+    <image src="images/_MG_4676.jpg" />
+    <image src="images/_MG_4677.jpg" />
+    <image src="images/_MG_4678.jpg" />
+    <image src="images/_MG_4679.jpg" />
+    <image src="images/_MG_4680.jpg" />
+    <image src="images/_MG_4681.jpg" />
+    <image src="images/_MG_4682.jpg" />
+    <image src="images/_MG_4683.jpg" />
+    <image src="images/_MG_4684.jpg" />
+    <image src="images/_MG_4685.jpg" />
+    <image src="images/_MG_4686.jpg" />
+    <image src="images/_MG_4687.jpg" />
+    <image src="images/_MG_4688.jpg" />
+    <image src="images/_MG_4689.jpg" />
+    <image src="images/_MG_4690.jpg" />
+    <image src="images/_MG_4691.jpg" />
+    <image src="images/_MG_4692.jpg" />
+    <image src="images/_MG_4693.jpg" />
+    <image src="images/_MG_4694.jpg" />
+    <image src="images/_MG_4695.jpg" />
+    <image src="images/_MG_4696.jpg" />
+    <image src="images/_MG_4697.jpg" />
+    <image src="images/_MG_4698.jpg" />
+    <image src="images/_MG_4699.jpg" />
+    <image src="images/_MG_4700.jpg" />
+    <image src="images/_MG_4701.jpg" />
+    <image src="images/_MG_4702.jpg" />
+    <image src="images/_MG_4703.jpg" />
+    <image src="images/_MG_4704.jpg" />
+    <image src="images/_MG_4705.jpg" />
+    <image src="images/_MG_4706.jpg" />
+    <image src="images/_MG_4707.jpg" />
+    <image src="images/_MG_4708.jpg" />
+    <image src="images/_MG_4709.jpg" />
+    <image src="images/_MG_4710.jpg" />
+    <image src="images/_MG_4711.jpg" />
+    <image src="images/_MG_4712.jpg" />
+    <image src="images/_MG_4713.jpg" />
+    <image src="images/_MG_4714.jpg" />
+    <image src="images/_MG_4715.jpg" />
+    <image src="images/_MG_4716.jpg" />
+    <image src="images/_MG_4717.jpg" />
+    <image src="images/_MG_4718.jpg" />
+    <image src="images/_MG_4719.jpg" />
+    <image src="images/_MG_4720.jpg" />
+    <image src="images/_MG_4722.jpg" />
+    <image src="images/_MG_4723.jpg" />
+    <image src="images/_MG_4724.jpg" />
+    <image src="images/_MG_4725.jpg" />
+    <image src="images/_MG_4726.jpg" />
+    <image src="images/_MG_4727.jpg" />
+    <image src="images/_MG_4728.jpg" />
+  </images>
+</config>

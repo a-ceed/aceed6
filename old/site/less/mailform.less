@@ -1,0 +1,139 @@
+@import "mixins.less";
+@import "variables.less";
+
+/*========================================================
+                      Contact Form
+=========================================================*/
+
+@input-height: 50px;
+@input-offset-top: 30px;
+@input-padding: 7px 21px 7px;
+@input-font-family: @font-family-base;
+@input-font-size: 18px;
+@input-line-height: 22px;
+@input-color: @default-base;
+@input-border-radius: 0;
+@input-brdr: 1px solid #d8d8d8;
+@input-font-weight: 300;
+@input-background: transparent;
+
+@textarea-height: 166px;
+
+@placeholder-clr: @input-color;
+@placeholder-opacity: 1;
+
+/* MF
+========================================================*/
+.mailform {
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  * + &{
+    margin-top: 36px;
+  }
+
+  fieldset {
+    border: none;
+    line-height: 0;
+  }
+
+  * {
+    .box-sizing(border-box);
+  }
+}
+
+.mailform fieldset > label,
+.mailform .form-group{
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: @input-offset-top;
+  margin-bottom: 0;
+
+  &:nth-child(2) + label{
+    margin-left: 11px;
+  }
+  &:nth-child(2), &:nth-child(3){
+    display: inline-block;
+    width: 49%;
+    @media (max-width: 1199px){
+      width: 100%;
+      & + label{
+        margin-left: 0;
+        margin-top: @input-offset-top;
+      }
+    }
+  }
+
+  &.textarea{
+    width: 100%;
+    margin-left: 0;
+    * + &{
+      margin-top: 59px;
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  input, select, textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    font-family: @input-font-family;
+    font-size: @input-font-size;
+    font-weight: @input-font-weight;
+    padding: @input-padding;
+    line-height: @input-line-height;
+    color: @input-color;
+    background: @input-background;
+    border: none;
+    border-bottom: @input-brdr;
+    .border-radius(@input-border-radius);
+
+    &:-moz-placeholder {
+      color: @placeholder-clr;
+      opacity: @placeholder-opacity;
+    }
+
+    &::-webkit-input-placeholder {
+      color: @placeholder-clr;
+      opacity: @placeholder-opacity;
+    }
+
+    &::-moz-placeholder {
+      color: @placeholder-clr;
+      opacity: @placeholder-opacity;
+    }
+
+    &:-ms-input-placeholder {
+      color: @placeholder-clr;
+      opacity: @placeholder-opacity;
+    }
+  }
+
+  textarea {
+    resize: none;
+    overflow: auto;
+    height: @textarea-height;
+    border: @input-brdr;
+  }
+
+  @media (max-width: 1365px) {
+    margin-top: 30px;
+  }
+}
+
+@import "mailform_modules/_mf-animation.less";
+@import "mailform_modules/_mf-placeholder.less";
+@import "mailform_modules/_mf-validation.less";
+@import "mailform_modules/_mf-submit.less";
+//@import "mailform_modules/_mf-icon.less";
+//@import "mailform_modules/_mf-select.less";
+//@import "mailform_modules/_mf-datepicker.less";
+//
+//
