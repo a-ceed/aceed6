@@ -2611,3 +2611,9 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.competencies {
+	text-align: left;
+	margin-left: 20%;
+	margin-top: 15px;
+}
